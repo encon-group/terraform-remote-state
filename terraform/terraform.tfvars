@@ -1,1 +1,2 @@
 STAGE = "YOUR_STAGE_NAME_HERE"
+AWS_PROFILE = "default"

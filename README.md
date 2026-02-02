@@ -10,7 +10,8 @@ A simple terraform project to create remote state in AWS using S3 and DynamoDB
 
 ## Introduction and usage
 This project creates an aws remote state by creating an S3 bucket and dynamoDB locking tables.
-To deploy the remote state populate the `./terraform/terraform.tfvars` file with the name you want to append to the created infrastructure.
+To deploy the remote state populate the `./terraform/terraform.tfvars` file with the name you want to append (STAGE) to the created infrastructure.
+Also include the aws account profile (AWS_PROFILE) you would like to deploy into. This will correspond with whatever you have in `~/.aws/credentials`
 
 After this run the `./deployRemoteState.sh` script
 
